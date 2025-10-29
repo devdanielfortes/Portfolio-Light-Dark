@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Fortes | Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body id="body-main">
+
+    <header>
+        <div class="logo"><a href="#">&lt;Daniel Fortes/&gt;</a></div>
+        <nav>
+            <a href="#about">Sobre</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+        </nav>
+        <button id="theme-toggle" title="Alternar Modo Claro/Escuro">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+    </header>
+
+    <section id="hero">
+        <h1 data-animate>Olá, eu sou Daniel Fortes</h1>
+        <p id="typing-text"></p>
+    </section>
+
+    <section id="about" data-animate>
+        <h2>Sobre Mim</h2>
+        <p style="max-width: 800px; margin: 0 auto; text-align: center;">
+            Olá! Me chamo <strong>Daniel Fortes</strong>, estudo tecnologia há 3 anos e sou desenvolvedor de <strong>websites</strong> com foco em criar interfaces modernas, funcionais e responsivas.
+            Também possuo experiência em <strong>back-end</strong>, trabalhando principalmente com Java, o que me permite desenvolver soluções completas e bem estruturadas.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2 data-animate>Tech Stack & Habilidades</h2>
+        <div id="skills-container" data-animate>
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <p>HTML5 & CSS3</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js-square"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-node-js"></i>
+                <p>Node.js</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-java"></i>
+                <p>Java</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <p>Git & GitHub</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 data-animate>Projetos em Destaque</h2>
+        <div id="projects-container">
+            <div class="project-card" data-animate>
+                <div class="project-image">
+                    Formulário Dark
+                </div>
+                <div class="project-info">
+                    <h3>Formulário Dark</h3>
+                    <p>Desenvolvimento de Formulário Dark-(Escuro), totalmente responsivo.</p>
+                    <div class="project-links" style="margin-top: 15px;">
+                        <a href="https://github.com/devdanielfortes/formulario-dark" target="_blank"><i class="fas fa-code"></i> Código (GitHub)</a>
+                        <a href="https://devdanielfortes.github.io/formulario-dark/" target="_blank"><i class="fas fa-external-link-alt"></i> Formulário</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-animate>
+                <div class="project-image">
+                    Preciso adicionar
+                </div>
+                <div class="project-info">
+                    <h3>Preciso adicionar</h3>
+                    <p>Preciso adicionar um projeto, em breve.</p>
+                    <div class="project-links" style="margin-top: 15px;">
+                        <a href="#" target="_blank"><i class="fas fa-code"></i> Código (GitHub)</a>
+                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Projeto</a>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+    </section>
+
+    <section id="contact">
+        <h2 data-animate>Vamos Conectar?</h2>
+        <div id="form-feedback" style="text-align: center; margin-bottom: 20px; font-weight: bold;"></div>
+
+        <form id="contact-form" data-animate action="https://formspree.io/f/xldonpzd" method="POST">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="message" rows="5" placeholder="Sua Mensagem / Proposta de Projeto" required></textarea>
+            <button type="submit">Enviar Mensagem &gt;</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Daniel Fortes. Desenvolvido com &lt;/&gt; e <span><i class="fas fa-heart" style="color: var(--cor-destaque);"></i></span>.</p>
+    </footer>
+
+    <script src="assets/javascript/script.js"></script>
+</body>
+</html>
