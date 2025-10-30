@@ -32,9 +32,9 @@ setInitialTheme();
 
 const typingTextElement = document.getElementById('typing-text');
 const texts = [
-    "Transformando Código em Soluções.", 
+    "Transformando Código em Soluções", 
     "Futuro Engenheiro de Software",
-    "Tecnologia é a Resposta."
+    "Tecnologia é a Resposta"
 ];
 let textIndex = 0;
 let charIndex = 0;
