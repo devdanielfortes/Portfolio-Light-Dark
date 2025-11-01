@@ -84,7 +84,6 @@ document.querySelectorAll('[data-animate]').forEach(el => {
     observer.observe(el);
 });
 
-// -------------- Parte do Contato --------------- //
 const contactForm = document.getElementById('contact-form');
 const formFeedback = document.getElementById('form-feedback');
 const formUrl = contactForm.getAttribute('action'); 
@@ -94,7 +93,6 @@ contactForm.addEventListener('submit', async function (e) {
 
     const button = contactForm.querySelector('button[type="submit"]');
     
-    // 1. Prepara o estado
     button.disabled = true;
     button.textContent = 'Enviando...';
     formFeedback.textContent = ''; 
@@ -111,7 +109,6 @@ contactForm.addEventListener('submit', async function (e) {
         });
 
         if (response.ok) {
-            // SUCESSO!
             formFeedback.style.color = 'var(--cor-destaque)';
             formFeedback.textContent = 'Mensagem enviada com sucesso! Em breve, entrarei em contato.';
             
